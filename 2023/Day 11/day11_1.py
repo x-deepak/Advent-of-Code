@@ -1,4 +1,4 @@
-import re
+
 import numpy as np
 
 with open('day11_input.txt','r+') as f:
