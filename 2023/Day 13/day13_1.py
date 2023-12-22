@@ -74,10 +74,10 @@ for  pat in segments:
     if rows==0:
         pattern_list2 = transpose(pat.split('\n'))
         rows = count_rows(pattern_list2)
-        print(rows,'herkl')
+        # print(rows)
         sum += rows 
     else:
-        print(rows*100)
+        # print(rows*100)
         sum += rows*100
 
     
