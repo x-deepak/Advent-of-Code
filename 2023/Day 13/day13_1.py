@@ -17,7 +17,6 @@ def count_rows(i):
         second.reverse()
         # print('sec=',second)
         if first==second:
-            # print('breaking')
             return pop_counter+len(first)
         ls_cp.pop(0)
         ls_cp.pop(0)
@@ -37,7 +36,6 @@ def count_rows(i):
         second.reverse()
         # print('sec=',second)
         if first==second:
-            # print('breakingsdfsdf')
             return len(first)
         i.pop(-1)
         i.pop(-1)
@@ -45,16 +43,13 @@ def count_rows(i):
         
 
 
-def transpose(l1):              
+def transpose(l1):              #def transpose(l1,l2=[]): --> this error took me 1hr to find
     l2 = []
-    # iterate over list l1 to the length of an item 
     for i in range(len(l1[0])):
         # print(i)
         row = ''
-        # print(i)
         for item in l1[::-1]:
-            
-            # i contains index position and item contains values
+
             row+= item[i]
         l2.append(row)
     return l2
@@ -68,7 +63,6 @@ def transpose(l1):
 sum = 0
 
 for  pat in segments:
-    #find vertical line and return col. count
     pattern_list = pat.split('\n')
     rows = count_rows(pattern_list)
     if rows==0:
@@ -82,7 +76,4 @@ for  pat in segments:
 
     
     
-
-    # count_rows(i)
-# print(count)
 print(sum)
