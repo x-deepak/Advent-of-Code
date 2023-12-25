@@ -9,7 +9,6 @@ with open('day11_input.txt','r+') as f:
     
     for ind,i in enumerate(data):
 
-        # print(i,ind)
         if i=='#':
             f.seek(ind+new_lines)
             f.write('7')
@@ -35,13 +34,9 @@ for ind,i in enumerate(space):
     space[ind]=ls
 
 
-# print(space[-1])
-
 
 copy_arr = np.array(space)
 
-
-# print(set(arr[0]))
 c=0
 while True:
     i = copy_arr[c]
@@ -69,11 +64,11 @@ while True:
 
 copy_arr = copy_arr.transpose()
 
-# print(copy_arr)
+
 
 a = np.where(copy_arr==7)
 
-# print(a)
+
 
 num_indexes = []             #  no. of unique pairs ==  (n(n-1))/2 ;       n = no. of elements
 

@@ -9,7 +9,6 @@ with open('day11_input.txt','r+') as f:
     
     for ind,i in enumerate(data):
 
-        # print(i,ind)
         if i=='#':
             f.seek(ind+new_lines)
             f.write('7')
@@ -35,7 +34,7 @@ for ind,i in enumerate(space):
     space[ind]=ls
 
 
-# print(space[-1])
+
 
 
 copy_arr = np.array(space)
